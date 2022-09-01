@@ -1,5 +1,5 @@
 import fetchCategory from '../../API/fetchNutritionAPI';
-import fetchRecipe from '../../API/fetchRecipeAPI';
+// import fetchRecipe from '../../API/fetchRecipeAPI';
 
 function arrayMin(arr) {
   let len = arr.length;
@@ -60,7 +60,6 @@ export const retrieveCategory = (category) => async (dispatch) => {
     const minCal = arrayMin(data.hits.map((dataItem) => Number(dataItem.fields.nf_calories)));
     const maxFat = arrayMax(data.hits.map((dataItem) => Number(dataItem.fields.nf_total_fat)));
     const minFat = arrayMin(data.hits.map((dataItem) => Number(dataItem.fields.nf_total_fat)));
-    const recipes = await fetchRecipe(category).then((response) => response);
     const result = {
       name: category,
       maxCalories: maxCal,
@@ -68,7 +67,6 @@ export const retrieveCategory = (category) => async (dispatch) => {
       maxTotalFat: maxFat,
       minTotalFat: minFat,
       hits: data.hits,
-      image: recipes.hits[0].recipe.image,
     };
     dispatch({
       type: RETRIEVE_CATEGRIES,

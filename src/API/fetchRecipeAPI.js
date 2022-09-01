@@ -1,12 +1,4 @@
-const options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': 'a38d3aa7f4msh21e34295678ed47p16f9d2jsnf21dedcf111f',
-    'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com',
-  },
-};
-
-export default function fetchRecipe(item) {
-  return fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=${item}`, options)
+export default function fetchRecipe(choices) {
+  return fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=beef&app_id=4b94946d&app_key=f1bc8715f5dc4ca37ffe7768a0103e1d&${choices}`)
     .then((response) => response.json());
 }
