@@ -17,11 +17,11 @@ The styling done using react-bootstrap with [Create React App](https://github.co
 
 ## Live Demo
 
- [Free Games DB]()
+ [Meat Explorer](https://jafer-meat-explorer.netlify.app/)
 
  ## Video Preview
 
- [Loom Video]()
+ [Loom Video](https://www.loom.com/share/9acc5a7b3c664df0b22a61e5553c03b6)
 
  ## Getting Started
 
