@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Badge from 'react-bootstrap/Badge';
 import { Card } from 'react-bootstrap';
+import BackButton from '../components/BackButton';
 
 function RecipePage() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function RecipePage() {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
       <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet" />
       <h1 className="text-center cairoFont">{recipe.label}</h1>
+      <BackButton />
       <Card.Img src={recipe.image} alt="Recipe" />
       <h6 className="text-center my-0 text-muted bg-warning" style={{ '--bs-bg-opacity': '.8' }}>
         Calories

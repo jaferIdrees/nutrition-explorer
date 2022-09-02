@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import { v4 as uuidv4 } from 'uuid';
 import RecipeRow from '../components/RecipeRow';
+import BackButton from '../components/BackButton';
 
 function RecipesList() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function RecipesList() {
       >
         {selectedRecipes && (
         <div className="ms-auto me-auto" style={{ maxWidth: '40rem' }}>
+          <BackButton />
           {selectedRecipes.map((recipe) => (
             <RecipeRow
               key={uuidv4()}
