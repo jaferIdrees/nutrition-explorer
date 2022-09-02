@@ -2,11 +2,13 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage';
+import RecipesList from './pages/RecipesList';
+import RecipePage from './pages/RecipePage';
 import { retrieveCategory } from './redux/foodType/mainCategory';
 
 const categories = [
   'Beef',
-  'Lamp',
+  'Lamb',
   'Chicken',
   'Turkey',
   'Venison',
@@ -30,6 +32,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
+      <Route path="/recipes" element={<RecipesList />} />
+      <Route path="/recipes/details" element={<RecipePage />} />
     </Routes>
   );
 }

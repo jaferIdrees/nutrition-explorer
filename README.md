@@ -1,6 +1,45 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
+# Meat Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+On this webapp you can check a list of different meat types with the related ranges of calories and total fat. <br>
+For each meat type you can check the available cuisine types and you can navigate to any available Recipe details.<br>
+The styling done using react-bootstrap with [Create React App](https://github.com/facebook/create-react-app).
+
+## Built With
+![](https://img.shields.io/badge/-HTML-orange) ![](https://img.shields.io/badge/-CSS-blue) ![](https://img.shields.io/badge/-JavaScript-yellow) ![](https://img.shields.io/badge/-React-cyan)
+- HTML/CSS
+- Javascript
+- Visual Studio Code
+- Node.js
+- Jest
+- React
+- Redux
+
+## Live Demo
+
+ [Free Games DB]()
+
+ ## Video Preview
+
+ [Loom Video]()
+
+ ## Getting Started
+
+To clone the repo run the line `git clone https://github.com/lucas-crodrigues/free-games-db.git` on your console.
+
+To get a local copy up and running, run these command lines on your console:<br>
+  1- `cd free-games-db` <br>
+  2-  `npm install` <br>
+  3-  `npm start` <br>
+  4-  To run tests use `npm test` <br>
+
+  ## Authors
+
+👤 **Ja'fer Yousef**
+
+- GitHub: [@githubhandle](https://github.com/jaferIdrees)
+- Twitter: [@twitterhandle](https://twitter.com/jafel_l)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jafer-idrees/)
 
 ## Available Scripts
 
@@ -29,42 +68,22 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 🤝 Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributions, issues, and feature requests are welcome!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Feel free to check the [issues page](https://github.com/jaferIdrees/nutrition-explorer/issues).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Show your support
+Give a ⭐️ if you like this project!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgments
 
-## Learn More
+- [Microverse](https://github.com/microverseinc) team. <br>
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).<br>
+- [creativecommons license](https://creativecommons.org/licenses/by-nc/4.0/).<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is MIT licensed.
