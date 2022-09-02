@@ -19,12 +19,14 @@ function MainPage() {
         breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
         minBreakpoint="xxs"
       >
-        {state.map((category) => (
-          <Category
-            key={uuidv4()}
-            category={category}
-          />
-        ))}
+        <div className="ms-auto me-auto" style={{ maxWidth: '40rem' }}>
+          {state.map((category) => (
+            <Category
+              key={uuidv4()}
+              category={category}
+            />
+          ))}
+        </div>
       </ThemeProvider>
     </>
   );

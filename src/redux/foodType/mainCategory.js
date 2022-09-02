@@ -27,8 +27,7 @@ function arrayMax(arr) {
 
 // Actions
 const RETRIEVE_CATEGRIES = 'RETRIEVE_CATEGRIES';
-/* const ADD = 'ADD';
-const REMOVE = 'REMOVE'; */
+// const REMOVE = 'REMOVE';
 const ERROR = 'ERROR';
 
 const initialState = [];
@@ -37,9 +36,6 @@ const initialState = [];
 export default function reducer(state = initialState, action = {}) {
   const { type, payload } = action;
   switch (type) {
-    /* case ADD:
-      return [...state];
- */
     case RETRIEVE_CATEGRIES:
     {
       const newState = [...state, payload];
