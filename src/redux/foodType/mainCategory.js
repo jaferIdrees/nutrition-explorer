@@ -1,5 +1,4 @@
 import fetchCategory from '../../API/fetchNutritionAPI';
-// import fetchRecipe from '../../API/fetchRecipeAPI';
 
 function arrayMin(arr) {
   let len = arr.length;
@@ -27,7 +26,6 @@ function arrayMax(arr) {
 
 // Actions
 const RETRIEVE_CATEGRIES = 'RETRIEVE_CATEGRIES';
-// const REMOVE = 'REMOVE';
 const ERROR = 'ERROR';
 
 const initialState = [];
@@ -42,9 +40,6 @@ export default function reducer(state = initialState, action = {}) {
       if (state.map((item) => item.name).includes(payload.name)) return state;
       return newState;
     }
-    /* case REMOVE: return [
-      ...state.filter((book) => (book.id !== action.bookID)),
-    ]; */
     default: return state;
   }
 }

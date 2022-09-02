@@ -11,7 +11,7 @@ function GridRow(props) {
       <Row>
         <Col>
           <Card id={meatType} className="bg-warning ps-1 pe-3 text-secondary" style={{ '--bs-bg-opacity': '.5' }}>
-            <Card.Title className="text-center">
+            <Card.Title className="text-center text-capitalize">
               { cuisine }
             </Card.Title>
             <Link to="/recipes" state={{ meatType, cuisine }} className="link">====&gt;</Link>

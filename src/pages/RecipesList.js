@@ -8,15 +8,10 @@ import RecipeRow from '../components/RecipeRow';
 function RecipesList() {
   const location = useLocation();
   const { meatType, cuisine } = location.state;
-  console.log(meatType, cuisine[0]);
   const recipes = useSelector((state) => state.recipes);
   const meatTypeRecipe = recipes.filter((recipe) => recipe.meatType === meatType);
-  console.log(meatTypeRecipe[0].hits.hits[0].recipe.cuisineType[0]);
   const selectedRecipes = meatTypeRecipe[0].hits.hits.filter(
     (recipe) => recipe.recipe.cuisineType[0] === cuisine[0],
-  );
-  meatTypeRecipe[0].hits.hits.map(
-    (recipe) => console.log(recipe.recipe.cuisineType),
   );
 
   return (

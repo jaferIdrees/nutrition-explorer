@@ -19,28 +19,6 @@ import Venison from '../assets/images/Venison.jpg';
 import GridRow from './GridRow';
 import { addMeatData } from '../redux/foodType/meatType';
 
-/* const cuisineChoices = [
-  {
-    cuisine: 'American',
-    description: 'American',
-  },
-  {
-    cuisine: 'Asian',
-    description: 'Asian',
-  },
-  {
-    cuisine: 'Central Europe',
-    description: 'Central Europe',
-  },
-  {
-    cuisine: 'Eastern Europe',
-    description: 'Eastern Europe',
-  },
-  {
-    cuisine: 'Middle Eastern',
-    description: 'Middle Eastern',
-  },
-]; */
 function Category(category) {
   const initialState = {
     open: false,
@@ -65,28 +43,29 @@ function Category(category) {
   const meatType = { ...category }.category.name;
   const handleButtonClick = (e) => {
     const meatTypeRecipe = recipes.filter((recipe) => recipe.meatType === e.target.id);
+    let waitTime = 0;
     if (meatTypeRecipe.length === 0) {
+      waitTime = 3000;
       dispatch(addMeatData(e.target.id));
     }
+    const clickButton = (e) => e.target.click();
     setTimeout(() => setOpen(() => {
       const meatTypeRecipes = recipes.filter((recipe) => recipe.meatType === e.target.id);
       if (meatTypeRecipes.length === 0) {
-        console.log('hh');
+        clickButton(e);
         return {
-          open: !open,
-          cuisineList: [1],
+          open: false,
+          cuisineList: ['getting data!'],
         };
       }
-      console.log(meatTypeRecipes[0].hits.hits[0].recipe.cuisineType[0]);
       const newCuisineList = meatTypeRecipes[0].hits.hits.map(
         (recipe) => (recipe.recipe.cuisineType[0]),
       );
-      console.log(newCuisineList);
       return {
         open: !open,
-        cuisineList: [...new Set(newCuisineList)],
+        cuisineList: ([...new Set(newCuisineList)]),
       };
-    }), 6000);
+    }), waitTime);
   };
 
   return (

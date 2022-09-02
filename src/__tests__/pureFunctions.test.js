@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter, MemoryRouter } from 'react-router-dom';
@@ -45,10 +44,6 @@ test('loads and displays a Recipe page', async () => {
       </MemoryRouter>
     </Provider>,
   );
-
-  // ACT
-  /* await userEvent.click(screen.getByText('Load Greeting'));
-  await screen.findByRole('heading'); */
 
   // ASSERT
   expect(screen.getByText('Horseradish Sauce')).toHaveTextContent('Horseradish Sauce');
