@@ -1,20 +1,20 @@
 body {
-	margin: 0;
+  margin: 0;
 }
 
 .link {
-	text-decoration: none;
-	margin-left: auto;
+  text-decoration: none;
+  margin-left: auto;
 }
 
 .cairoFont {
-	font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 .btn {
-	margin-left: auto !important;
+  margin-left: auto !important;
 }
 
-.yellow { 
-	background-color: rgb(255, 255, 0, .8) !important;
+.yellow {
+  background-color: rgb(255, 255, 0, 0.8) !important;
 }
